@@ -88,7 +88,7 @@ Rails.application.configure do
    }
 
   # Host
-   config.action_mailer.default_url_options = { :host => "localhost:3000" }
+   config.action_mailer.default_url_options = { :host => "https://m1portal.herokuapp.com" }
 
   # From address
    ActionMailer::Base.default :from => 'ModusOne Health <jnelms@lucynasolutions.com>'
