@@ -5,7 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6b98bac-cfd1-475d-9b04-535ea9df0d29" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/clinic_conditions.coffee" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/surgery_conditions.coffee" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/surgery_docs.coffee" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/surgery_types.coffee" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/clinic_conditions_controller.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/surgery_conditions_controller.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/surgery_docs_controller.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/surgery_types_controller.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/clinic_conditions_helper.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/surgery_conditions_helper.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/surgery_docs_helper.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/surgery_types_helper.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/models/clinic_condition.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/models/surgery_condition.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/models/surgery_doc.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/models/surgery_type.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/views/clinic_conditions/_form.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/views/clinic_conditions/edit.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/views/clinic_conditions/index.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/views/clinic_conditions/new.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/views/clinic_conditions/show.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/views/surgery_conditions/_form.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/views/surgery_conditions/edit.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/views/surgery_conditions/index.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/views/surgery_conditions/new.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/views/surgery_conditions/show.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/views/surgery_docs/_form.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/views/surgery_docs/edit.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/views/surgery_docs/index.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/views/surgery_docs/new.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/views/surgery_docs/show.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/views/surgery_types/_form.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/views/surgery_types/edit.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/views/surgery_types/index.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/views/surgery_types/new.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/views/surgery_types/show.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20171122195619_create_surgery_types.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20171122203903_create_surgery_docs.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20171128200948_create_surgery_conditions.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20171129201724_create_clinic_conditions.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/clinic_conditions_controller_test.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/surgery_conditions_controller_test.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/surgery_docs_controller_test.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/surgery_types_controller_test.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/clinic_conditions.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/surgery_conditions.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/surgery_docs.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/surgery_types.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/models/clinic_condition_test.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/models/surgery_condition_test.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/models/surgery_doc_test.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/models/surgery_type_test.rb" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -140,13 +192,6 @@
               <item name="m1portal" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="m1portal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="m1portal" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="clinic_cr_forms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="m1portal" type="b2602c69:ProjectViewProjectNode" />
@@ -295,12 +340,12 @@
       <workItem from="1513013983934" duration="18981000" />
       <workItem from="1513058762112" duration="9027000" />
       <workItem from="1513100285476" duration="21580000" />
-      <workItem from="1513273550339" duration="31110000" />
+      <workItem from="1513273550339" duration="31921000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169951000" />
+    <option name="totallyTimeSpent" value="170762000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="5" y="5" width="1547" height="820" extended-state="0" />
@@ -477,23 +522,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/clinic_accurate_conditions/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20171214212013_create_account_pat_types.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/clinic_conditions/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -772,6 +801,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/clinic_conditions/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/clinic_accurate_conditions/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

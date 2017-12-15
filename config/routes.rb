@@ -14,11 +14,8 @@ Boxroom::Application.routes.draw do
   resources :surg_hosp_form_docs
   resources :surg_hosp_form_hospitals
   resources :surg_hosp_forms
-  resources :clinic_conditions
   resources :clinic_docs
   resources :clinics
-  resources :surgery_conditions
-  resources :surgery_docs
   resources :surgery_docs do
     collection { post :import }
   end
@@ -71,7 +68,6 @@ Boxroom::Application.routes.draw do
     collection { post :import }
   end
 
-  resources :surgery_types
   get '/file_exists', :to => 'files#exists'
   get '/signin', :to => 'sessions#new', :as => 'signin'
   delete '/signout', :to => 'sessions#destroy'
