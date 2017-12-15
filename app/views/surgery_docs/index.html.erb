@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Surgery Docs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Surgery type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @surgery_docs.each do |surgery_doc| %>
+      <tr>
+        <td><%= surgery_doc.name %></td>
+        <td><%= surgery_doc.surgery_type.name if surgery_doc.surgery_type and surgery_doc.surgery_type.name %></td>
+        <td><%= link_to 'Show', surgery_doc %></td>
+        <td><%= link_to 'Edit', edit_surgery_doc_path(surgery_doc) %></td>
+        <td><%= link_to 'Destroy', surgery_doc, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<h3>Import Surgery Docs</h3>
+<br>
+<%= form_tag import_surgery_docs_path, multipart: true do %>
+    <%= file_field_tag :file %>
+    <%= submit_tag "Import Surgery Docs" %>
+<% end %>
+
+<br>
+<%= link_to 'Create Surgery Doc', new_surgery_doc_path %>

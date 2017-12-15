@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Recorded Surgery/Hospital Chart Review Forms</h1>
+
+Below is a list of all Surgery/Hospital Forms that have been entered into the portal's database.
+
+<div id="table-wrapper">
+  <div id="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Surg hosp form</th>
+          <th>Surg hosp form hospital</th>
+          <th>Reviewer email address</th>
+          <th>Account pat num</th>
+          <th>Account pat type</th>
+          <th>Admit date</th>
+          <th>Discharge date</th>
+          <th>Any pertinent conditions</th>
+          <th>Surg hosp form doc</th>
+          <th>Shf omitted condition</th>
+          <th>Shf omitted condition detail</th>
+          <th>Shf dnmc condition</th>
+          <th>Shf dnmc condition detail</th>
+          <th>Shf actual condition</th>
+          <th>Additional provider</th>
+          <th>Actual conditions tally</th>
+          <th>Captured conditions tally</th>
+          <th>Dnmc conditions tally</th>
+          <th>Additional notes</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @surg_hosp_cr_forms.each do |surg_hosp_cr_form| %>
+          <tr>
+            <td><%= surg_hosp_cr_form.surg_hosp_form.name if surg_hosp_cr_form.surg_hosp_form and surg_hosp_cr_form.surg_hosp_form.name %></td>
+            <td><%= surg_hosp_cr_form.surg_hosp_form_hospital.name if surg_hosp_cr_form.surg_hosp_form_hospital and surg_hosp_cr_form.surg_hosp_form_hospital.name %></td>
+            <td><%= surg_hosp_cr_form.reviewer_email_address %></td>
+            <td><%= surg_hosp_cr_form.account_pat_num %></td>
+            <td><%= surg_hosp_cr_form.account_pat_type.name if surg_hosp_cr_form.account_pat_type and surg_hosp_cr_form.account_pat_type.name %></td>
+            <td><%= surg_hosp_cr_form.admit_date %></td>
+            <td><%= surg_hosp_cr_form.discharge_date %></td>
+            <td><%= surg_hosp_cr_form.any_pertinent_conditions %></td>
+            <td><%= surg_hosp_cr_form.surg_hosp_form_doc.name if surg_hosp_cr_form.surg_hosp_form_doc and surg_hosp_cr_form.surg_hosp_form_doc.name %></td>
+            <td><%= surg_hosp_cr_form.shf_omitted_condition.name if surg_hosp_cr_form.shf_omitted_condition and surg_hosp_cr_form.shf_omitted_condition.name %></td>
+            <td><%= surg_hosp_cr_form.shf_omitted_condition_detail %></td>
+            <td><%= surg_hosp_cr_form.shf_dnmc_condition.name if surg_hosp_cr_form.shf_dnmc_condition and surg_hosp_cr_form.shf_dnmc_condition.name%></td>
+            <td><%= surg_hosp_cr_form.shf_dnmc_condition_detail %></td>
+            <td><%= surg_hosp_cr_form.shf_actual_condition.name if surg_hosp_cr_form.shf_actual_condition and surg_hosp_cr_form.shf_actual_condition.name%></td>
+            <td><%= surg_hosp_cr_form.additional_provider %></td>
+            <td><%= surg_hosp_cr_form.actual_conditions_tally %></td>
+            <td><%= surg_hosp_cr_form.captured_conditions_tally %></td>
+            <td><%= surg_hosp_cr_form.dnmc_conditions_tally %></td>
+            <td><%= surg_hosp_cr_form.additional_notes %></td>
+            <td><%= link_to 'Show', surg_hosp_cr_form %></td>
+            <td><%= link_to 'Edit', edit_surg_hosp_cr_form_path(surg_hosp_cr_form) %></td>
+            <td><%= link_to 'Destroy', surg_hosp_cr_form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<br>
+
+<%= link_to 'Click this link to create a new Surgery/Hospital Form', new_surg_hosp_cr_form_path %>

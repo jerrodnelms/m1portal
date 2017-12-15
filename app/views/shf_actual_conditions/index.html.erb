@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Shf Actual Conditions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Surg hosp form</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @shf_actual_conditions.each do |shf_actual_condition| %>
+      <tr>
+        <td><%= shf_actual_condition.name %></td>
+        <td><%= shf_actual_condition.surg_hosp_form.name if shf_actual_condition.surg_hosp_form and shf_actual_condition.surg_hosp_form.name %></td>
+        <td><%= link_to 'Show', shf_actual_condition %></td>
+        <td><%= link_to 'Edit', edit_shf_actual_condition_path(shf_actual_condition) %></td>
+        <td><%= link_to 'Destroy', shf_actual_condition, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Shf actual condition', new_shf_actual_condition_path %>
+
+<br>
+<h3>Import Conditions</h3>
+<br>
+<p>To import multiple conditions from a .csv file:
+  1) Click Choose File
+  2) Once a file is chosen, click "Import Conditions" </p>
+<br>
+<%= form_tag import_shf_actual_conditions_path, multipart: true do %>
+    <%= file_field_tag :file %>
+    <%= button_tag "Import Conditions" %>
+<% end %>

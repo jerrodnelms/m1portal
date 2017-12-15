@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @clinic_misdiagnosed_condition.name %>
+</p>
+
+<p>
+  <strong>Clinic:</strong>
+  <%= @clinic_misdiagnosed_condition.clinic.name %>
+</p>
+
+<%= link_to 'Edit', edit_clinic_misdiagnosed_condition_path(@clinic_misdiagnosed_condition) %> |
+<%= link_to 'Back', clinic_misdiagnosed_conditions_path %>

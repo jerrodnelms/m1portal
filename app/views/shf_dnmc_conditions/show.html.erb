@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @shf_dnmc_condition.name %>
+</p>
+
+<p>
+  <strong>Surg hosp form:</strong>
+  <%= @shf_dnmc_condition.surg_hosp_form.name %>
+</p>
+
+<%= link_to 'Edit', edit_shf_dnmc_condition_path(@shf_dnmc_condition) %> |
+<%= link_to 'Back', shf_dnmc_conditions_path %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @shf_actual_condition.name %>
+</p>
+
+<p>
+  <strong>Surg hosp form:</strong>
+  <%= @shf_actual_condition.surg_hosp_form.name %>
+</p>
+
+<%= link_to 'Edit', edit_shf_actual_condition_path(@shf_actual_condition) %> |
+<%= link_to 'Back', shf_actual_conditions_path %>

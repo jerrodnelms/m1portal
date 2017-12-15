@@ -1,0 +1,2 @@
+module ShfOmittedConditionsHelper
+end

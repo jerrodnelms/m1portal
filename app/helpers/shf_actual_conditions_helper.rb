@@ -1,0 +1,2 @@
+module ShfActualConditionsHelper
+end

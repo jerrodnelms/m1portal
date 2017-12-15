@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Clinic:</strong>
+  <%= @clinic_cr_form.clinic.name %>
+</p>
+
+<p>
+  <strong>Mysis:</strong>
+  <%= @clinic_cr_form.mysis_id %>
+</p>
+
+<p>
+  <strong>Any pertinent conditions:</strong>
+  <%= @clinic_cr_form.any_pertinent_conditions %>
+</p>
+
+<p>
+  <strong>Clinic doc:</strong>
+  <%= @clinic_cr_form.clinic_doc.name %>
+</p>
+
+<p>
+  <strong>Num visits year:</strong>
+  <%= @clinic_cr_form.num_visits_year %>
+</p>
+
+<p>
+  <strong>Clinic omitted condition:</strong>
+  <%= @clinic_cr_form.clinic_omitted_condition.name %>
+</p>
+
+<p>
+  <strong>Clinic omitted condition detail:</strong>
+  <%= @clinic_cr_form.clinic_omitted_condition_detail %>
+</p>
+
+<p>
+  <strong>Clinic misdiagnosed condition:</strong>
+  <%= @clinic_cr_form.clinic_misdiagnosed_condition.name %>
+</p>
+
+<p>
+  <strong>Clinic misdiagnosed condition detail:</strong>
+  <%= @clinic_cr_form.clinic_misdiagnosed_condition_detail %>
+</p>
+
+<p>
+  <strong>Clinic accurate condition:</strong>
+  <%= @clinic_cr_form.clinic_accurate_condition.name %>
+</p>
+
+<p>
+  <strong>Additional providers:</strong>
+  <%= @clinic_cr_form.additional_providers %>
+</p>
+
+<p>
+  <strong>Actual condition tally:</strong>
+  <%= @clinic_cr_form.actual_condition_tally %>
+</p>
+
+<p>
+  <strong>Captured condition tally:</strong>
+  <%= @clinic_cr_form.captured_condition_tally %>
+</p>
+
+<p>
+  <strong>Misdiagnosed condition tally:</strong>
+  <%= @clinic_cr_form.misdiagnosed_condition_tally %>
+</p>
+
+<%= link_to 'Edit', edit_clinic_cr_form_path(@clinic_cr_form) %> |
+<%= link_to 'Back', clinic_cr_forms_path %>

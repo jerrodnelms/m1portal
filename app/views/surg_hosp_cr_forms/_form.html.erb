@@ -1,0 +1,113 @@
+<%= form_for(@surg_hosp_cr_form) do |f| %>
+  <% if @surg_hosp_cr_form.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@surg_hosp_cr_form.errors.count, "error") %> prohibited this surg_hosp_cr_form from being saved:</h2>
+
+      <ul>
+      <% @surg_hosp_cr_form.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :surg_hosp_form, 'Surgery/Hospital Form' %><br>
+    <%= f.collection_select( :surg_hosp_form_id, SurgHospForm.order(:name), :id, :name, include_blank: true ) %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :surg_hosp_form_hospital_id, 'Hospital/Facility' %><br>
+    <%= f.grouped_collection_select :surg_hosp_form_hospital_id, SurgHospForm.order(:name), :surg_hosp_form_hospitals, :name, :id, :name, include_blank: true  %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :reviewer_email_address, 'Reviewer Email Address' %><br>
+    <%= f.text_field :reviewer_email_address %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :account_pat_num, 'Account/Patient Number'%><br>
+    <%= f.number_field :account_pat_num %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :account_pat_type_id, 'Is this an Account or Patient?' %><br>
+    <%= f.grouped_collection_select :account_pat_type_id, SurgHospForm.order(:name), :account_pat_types, :name, :id, :name, include_blank: true  %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :admit_date, 'Admit Date' %><br>
+    <%= f.date_select :admit_date %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :discharge_date, 'Discharge Date' %><br>
+    <%= f.date_select :discharge_date %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :any_pertinent_conditions, 'Are there any pertinent conditions in this patient stay?' %><br>
+    <%= f.select :any_pertinent_conditions, [['Yes, take me to the Providers Section'], ['No, take me to the end of the form']]  %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :surg_hosp_form_doc_id, 'Please select a Provider' %><br>
+    <%= f.grouped_collection_select :surg_hosp_form_doc_id, SurgHospForm.order(:name), :surg_hosp_form_docs, :name, :id, :name, include_blank: true  %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :shf_omitted_condition_id, 'Omitted Condition' %><br>
+    <%= f.grouped_collection_select :shf_omitted_condition_id, SurgHospForm.order(:name), :shf_omitted_conditions, :name, :id, :name, include_blank: true %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :shf_omitted_condition_detail, 'Omitted Condition Detail' %><br>
+    <%= f.text_area :shf_omitted_condition_detail %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :shf_dnmc_condition_id, 'Condition Did Not Meet Criteria' %><br>
+    <%= f.grouped_collection_select :shf_dnmc_condition_id, SurgHospForm.order(:name), :shf_dnmc_conditions, :name, :id, :name, include_blank: true %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :shf_dnmc_condition_detail, 'Condition Did Not Meet Criteria Detail' %><br>
+    <%= f.text_area :shf_dnmc_condition_detail %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :shf_actual_condition_id, 'Accurately Captured Conditions' %><br>
+    <%= f.grouped_collection_select :shf_actual_condition_id, SurgHospForm.order(:name), :shf_actual_conditions, :name, :id, :name, include_blank: true %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :additional_provider, 'Additional providers ' %><br>
+    <%= f.text_area :additional_provider %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :actual_conditions_tally, 'Actual Conditions Tally' %><br>
+    <%= f.number_field :actual_conditions_tally %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :captured_conditions_tally, 'Captured Conditions ' %><br>
+    <%= f.number_field :captured_conditions_tally %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :dnmc_conditions_tally, 'Condition Did Not Meet Criteria' %><br>
+    <%= f.number_field :dnmc_conditions_tally %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :additional_notes %><br>
+    <%= f.text_area :additional_notes %>
+  </div>
+  <br>
+  <div class="actions">
+    <%= f.submit 'Submit Form' %>
+  </div>
+  <br>
+<% end %>

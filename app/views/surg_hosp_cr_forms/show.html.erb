@@ -1,0 +1,101 @@
+<p id="notice"><%= notice %></p>
+
+<p>NOTE!!!! Please review the information you entered into the form. If anything is incorrect, please click the "Edit" button to make the appropriate changes.</p>
+
+<p>
+  <strong>Surg hosp form:</strong>
+  <%= @surg_hosp_cr_form.surg_hosp_form.name %>
+</p>
+
+<p>
+  <strong>Surg hosp form hospital:</strong>
+  <%= @surg_hosp_cr_form.surg_hosp_form_hospital %>
+</p>
+
+<p>
+  <strong>Reviewer email address:</strong>
+  <%= @surg_hosp_cr_form.reviewer_email_address %>
+</p>
+
+<p>
+  <strong>Account pat num:</strong>
+  <%= @surg_hosp_cr_form.account_pat_num %>
+</p>
+
+<p>
+  <strong>Account pat type:</strong>
+  <%= @surg_hosp_cr_form.account_pat_type.name %>
+</p>
+
+<p>
+  <strong>Admit date:</strong>
+  <%= @surg_hosp_cr_form.admit_date %>
+</p>
+
+<p>
+  <strong>Discharge date:</strong>
+  <%= @surg_hosp_cr_form.discharge_date %>
+</p>
+
+<p>
+  <strong>Any pertinent conditions:</strong>
+  <%= @surg_hosp_cr_form.any_pertinent_conditions %>
+</p>
+
+<p>
+  <strong>Surg hosp form doc:</strong>
+  <%= @surg_hosp_cr_form.surg_hosp_form_doc.name %>
+</p>
+
+<p>
+  <strong>Shf omitted condition:</strong>
+  <%= @surg_hosp_cr_form.shf_omitted_condition.name %>
+</p>
+
+<p>
+  <strong>Shf omitted condition detail:</strong>
+  <%= @surg_hosp_cr_form.shf_omitted_condition_detail %>
+</p>
+
+<p>
+  <strong>Shf dnmc condition:</strong>
+  <%= @surg_hosp_cr_form.shf_dnmc_condition.name %>
+</p>
+
+<p>
+  <strong>Shf dnmc condition detail:</strong>
+  <%= @surg_hosp_cr_form.shf_dnmc_condition_detail %>
+</p>
+
+<p>
+  <strong>Shf actual condition:</strong>
+  <%= @surg_hosp_cr_form.shf_actual_condition.name %>
+</p>
+
+<p>
+  <strong>Additional provider:</strong>
+  <%= @surg_hosp_cr_form.additional_provider %>
+</p>
+
+<p>
+  <strong>Actual conditions tally:</strong>
+  <%= @surg_hosp_cr_form.actual_conditions_tally %>
+</p>
+
+<p>
+  <strong>Captured conditions tally:</strong>
+  <%= @surg_hosp_cr_form.captured_conditions_tally %>
+</p>
+
+<p>
+  <strong>Dnmc conditions tally:</strong>
+  <%= @surg_hosp_cr_form.dnmc_conditions_tally %>
+</p>
+
+<p>
+  <strong>Additional notes:</strong>
+  <%= @surg_hosp_cr_form.additional_notes %>
+</p>
+
+<%= link_to 'Edit', edit_surg_hosp_cr_form_path(@surg_hosp_cr_form) %> |
+<%= link_to 'Back', surg_hosp_cr_forms_path %>

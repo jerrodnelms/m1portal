@@ -1,0 +1,2 @@
+module ClinicMisdiagnosedConditionsHelper
+end

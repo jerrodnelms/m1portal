@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  clinic_id: 
+  mysis_id: 1
+  any_pertinent_conditions: MyString
+  clinic_doc_id: 
+  num_visits_year: 1
+  clinic_omitted_condition_id: 
+  clinic_omitted_condition_detail: MyString
+  clinic_misdiagnosed_condition_id: 
+  clinic_misdiagnosed_condition_detail: MyString
+  clinic_accurate_condition_id: 
+  additional_providers: MyString
+  actual_condition_tally: 1
+  captured_condition_tally: 1
+  misdiagnosed_condition_tally: 1
+
+two:
+  clinic_id: 
+  mysis_id: 1
+  any_pertinent_conditions: MyString
+  clinic_doc_id: 
+  num_visits_year: 1
+  clinic_omitted_condition_id: 
+  clinic_omitted_condition_detail: MyString
+  clinic_misdiagnosed_condition_id: 
+  clinic_misdiagnosed_condition_detail: MyString
+  clinic_accurate_condition_id: 
+  additional_providers: MyString
+  actual_condition_tally: 1
+  captured_condition_tally: 1
+  misdiagnosed_condition_tally: 1

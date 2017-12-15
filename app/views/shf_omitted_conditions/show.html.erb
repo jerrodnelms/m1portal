@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @shf_omitted_condition.name %>
+</p>
+
+<p>
+  <strong>Surg hosp form:</strong>
+  <%= @shf_omitted_condition.surg_hosp_form.name %>
+</p>
+
+<%= link_to 'Edit', edit_shf_omitted_condition_path(@shf_omitted_condition) %> |
+<%= link_to 'Back', shf_omitted_conditions_path %>
