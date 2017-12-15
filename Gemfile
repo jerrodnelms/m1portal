@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.8'
-gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2.1'
 gem 'jquery-rails'
+
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -19,9 +19,14 @@ gem 'jquery-fileupload-rails'
 gem 'smarter_csv'
 
 group :development do
+  gem 'sqlite3'
   gem 'web-console', '~> 2.0'
 end
 
 group :test do
   gem 'factory_girl_rails'
+end
+
+group :production do
+  gem 'pg'
 end
