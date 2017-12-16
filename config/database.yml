@@ -17,6 +17,8 @@ test:
 
 production:
   adapter: postgresql
-  database: db/production.sqlite3
+  encoding: unicode
+  database: m1portal_production
   pool: 5
-  timeout: 5000
+  username: postgres
+  password: Audrey2006
