@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/app/views/surg_hosp_form_docs/index.html.erb" line="39" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6b98bac-cfd1-475d-9b04-535ea9df0d29" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-    </list>
+    <list default="true" id="d6b98bac-cfd1-475d-9b04-535ea9df0d29" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -339,12 +337,12 @@
       <workItem from="1513100285476" duration="21580000" />
       <workItem from="1513273550339" duration="33449000" />
       <workItem from="1513454843103" duration="12312000" />
-      <workItem from="1513621679242" duration="4800000" />
+      <workItem from="1513621679242" duration="5397000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189402000" />
+    <option name="totallyTimeSpent" value="189999000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
