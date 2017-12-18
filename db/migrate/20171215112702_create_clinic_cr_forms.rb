@@ -1,6 +1,5 @@
 class CreateClinicCrForms < ActiveRecord::Migration
   def change
-    drop_table :clinic_cr_forms
     create_table :clinic_cr_forms do |t|
       t.references :clinic, index: true, foreign_key: true
       t.integer :mysis_id
