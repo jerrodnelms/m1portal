@@ -170,6 +170,7 @@ DEPENDENCIES
   factory_girl_rails
   jquery-fileupload-rails
   jquery-rails
+  nokogiri
   paperclip
   pg (~> 0.20.0)
   rails (= 4.2.8)

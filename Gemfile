@@ -7,18 +7,20 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2.1'
 gem 'jquery-rails'
 gem 'rake', '12.0.0'
+gem 'nokogiri'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # App specific gems
-gem 'tzinfo-data'
-gem 'dynamic_form'
 gem 'acts_as_tree'
-gem 'paperclip'
+gem 'dynamic_form'
 gem 'jquery-fileupload-rails'
-gem 'smarter_csv'
+gem 'paperclip'
 gem 'rails_12factor'
+gem 'smarter_csv'
+gem 'tzinfo-data'
+
 
 group :development do
   gem 'sqlite3'
