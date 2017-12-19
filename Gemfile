@@ -17,7 +17,6 @@ gem 'acts_as_tree'
 gem 'dynamic_form'
 gem 'jquery-fileupload-rails'
 gem 'paperclip'
-gem 'rails_12factor'
 gem 'smarter_csv'
 gem 'tzinfo-data'
 
